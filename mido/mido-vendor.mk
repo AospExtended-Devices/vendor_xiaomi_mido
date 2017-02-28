@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/mido/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/xiaomi/mido/proprietary/bin/energy-awareness:system/bin/energy-awareness \
-    vendor/xiaomi/mido/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/xiaomi/mido/proprietary/bin/garden_app:system/bin/garden_app \
     vendor/xiaomi/mido/proprietary/bin/gx_fpd:system/bin/gx_fpd \
     vendor/xiaomi/mido/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -45,13 +44,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/xiaomi/mido/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/xiaomi/mido/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/xiaomi/mido/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/xiaomi/mido/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/mido/proprietary/bin/radish:system/bin/radish \
     vendor/xiaomi/mido/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/xiaomi/mido/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/xiaomi/mido/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/xiaomi/mido/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/xiaomi/mido/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/xiaomi/mido/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/xiaomi/mido/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/xiaomi/mido/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
@@ -76,33 +75,41 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/xiaomi/mido/proprietary/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/xiaomi/mido/proprietary/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
+    vendor/xiaomi/mido/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
+    vendor/xiaomi/mido/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/csidtg_camera.xml:system/etc/camera/csidtg_camera.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/csidtg_chromatix.xml:system/etc/camera/csidtg_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx214_chromatix.xml:system/etc/camera/imx214_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx230_chromatix.xml:system/etc/camera/imx230_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx230_qc2002_chromatix.xml:system/etc/camera/imx230_qc2002_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx230_qc2002_with_gyro_chromatix.xml:system/etc/camera/imx230_qc2002_with_gyro_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx258_bear_chromatix.xml:system/etc/camera/imx258_bear_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx258_chromatix.xml:system/etc/camera/imx258_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx258_mono_bear_chromatix.xml:system/etc/camera/imx258_mono_bear_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx258_mono_chromatix.xml:system/etc/camera/imx258_mono_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx258_ofilm_chromatix.xml:system/etc/camera/imx258_ofilm_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx258_qtech_chromatix.xml:system/etc/camera/imx258_qtech_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx258_sunny_chromatix.xml:system/etc/camera/imx258_sunny_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx298_gt24c64_chromatix.xml:system/etc/camera/imx298_gt24c64_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/imx318_chromatix.xml:system/etc/camera/imx318_chromatix.xml \
-    vendor/xiaomi/mido/proprietary/etc/camera/msm8937_camera.xml:system/etc/camera/msm8937_camera.xml \
-    vendor/xiaomi/mido/proprietary/etc/camera/msm8952_camera.xml:system/etc/camera/msm8952_camera.xml \
-    vendor/xiaomi/mido/proprietary/etc/camera/msm8953_camera.xml:system/etc/camera/msm8953_camera.xml \
-    vendor/xiaomi/mido/proprietary/etc/camera/msm8996_camera.xml:system/etc/camera/msm8996_camera.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx362_chromatix_bear.xml:system/etc/camera/imx362_chromatix_bear.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx362_chromatix.xml:system/etc/camera/imx362_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/imx378_chromatix.xml:system/etc/camera/imx378_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov13850_chromatix.xml:system/etc/camera/ov13850_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov13850_q13v06k_chromatix.xml:system/etc/camera/ov13850_q13v06k_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov13855_qtech_chromatix.xml:system/etc/camera/ov13855_qtech_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/ov2281_chromatix.xml:system/etc/camera/ov2281_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov2680_chromatix.xml:system/etc/camera/ov2680_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov4688_chromatix.xml:system/etc/camera/ov4688_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov5670_chromatix.xml:system/etc/camera/ov5670_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov5670_f5670bq_chromatix.xml:system/etc/camera/ov5670_f5670bq_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov5695_chromatix.xml:system/etc/camera/ov5695_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/ov7251_chromatix.xml:system/etc/camera/ov7251_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov8858_chromatix.xml:system/etc/camera/ov8858_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/ov8865_chromatix.xml:system/etc/camera/ov8865_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/s5k2l7_8953_chromatix.xml:system/etc/camera/s5k2l7_8953_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/s5k2l7_chromatix.xml:system/etc/camera/s5k2l7_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3l8_chromatix.xml:system/etc/camera/s5k3l8_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3l8_f3l8yam_chromatix.xml:system/etc/camera/s5k3l8_f3l8yam_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3l8_mono_chromatix.xml:system/etc/camera/s5k3l8_mono_chromatix.xml \
@@ -112,15 +119,29 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3m2xm_chromatix_bear.xml:system/etc/camera/s5k3m2xm_chromatix_bear.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3m2xm_chromatix.xml:system/etc/camera/s5k3m2xm_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k3m2xx_chromatix.xml:system/etc/camera/s5k3m2xx_chromatix.xml \
-    vendor/xiaomi/mido/proprietary/etc/camera/s5k5e8_chromatix.xml:system/etc/camera/s5k5e8_chromatix.xml \
+    vendor/xiaomi/mido/proprietary/etc/camera/s5k3p3sm_chromatix.xml:system/etc/camera/s5k3p3sm_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k5e8_ofilm_chromatix.xml:system/etc/camera/s5k5e8_ofilm_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k5e8_qtech_chromatix.xml:system/etc/camera/s5k5e8_qtech_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/camera/s5k5e8_sunny_chromatix.xml:system/etc/camera/s5k5e8_sunny_chromatix.xml \
     vendor/xiaomi/mido/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/mido/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/xiaomi/mido/proprietary/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/xiaomi/mido/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/xiaomi/mido/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    vendor/xiaomi/mido/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/xiaomi/mido/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/mido/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/xiaomi/mido/proprietary/etc/drc/drc_cfg_5.1.txt:system/etc/drc/drc_cfg_5.1.txt \
@@ -147,64 +168,86 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/xiaomi/mido/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/xiaomi/mido/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/xiaomi/mido/proprietary/etc/firmware/DE.o.msm8953:system/etc/firmware/DE.o.msm8953 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b00:system/etc/firmware/fpctzapp.b00 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b01:system/etc/firmware/fpctzapp.b01 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b02:system/etc/firmware/fpctzapp.b02 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b03:system/etc/firmware/fpctzapp.b03 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b04:system/etc/firmware/fpctzapp.b04 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b05:system/etc/firmware/fpctzapp.b05 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.b06:system/etc/firmware/fpctzapp.b06 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/fpctzapp.mdt:system/etc/firmware/fpctzapp.mdt \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b00:system/etc/firmware/goodixfp.b00 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b01:system/etc/firmware/goodixfp.b01 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b02:system/etc/firmware/goodixfp.b02 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b03:system/etc/firmware/goodixfp.b03 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b04:system/etc/firmware/goodixfp.b04 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b05:system/etc/firmware/goodixfp.b05 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.b06:system/etc/firmware/goodixfp.b06 \
+    vendor/xiaomi/mido/proprietary/etc/firmware/goodixfp.mdt:system/etc/firmware/goodixfp.mdt \
     vendor/xiaomi/mido/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
+    vendor/xiaomi/mido/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
+    vendor/xiaomi/mido/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
+    vendor/xiaomi/mido/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
+    vendor/xiaomi/mido/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
+    vendor/xiaomi/mido/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
     vendor/xiaomi/mido/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/xiaomi/mido/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/xiaomi/mido/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/mido/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/mido/proprietary/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
     vendor/xiaomi/mido/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
+    vendor/xiaomi/mido/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/xiaomi/mido/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/mido/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/mido/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/xiaomi/mido/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
     vendor/xiaomi/mido/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/xiaomi/mido/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/xiaomi/mido/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/mido/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/xiaomi/mido/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
+    vendor/xiaomi/mido/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/xiaomi/mido/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/xiaomi/mido/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/mido/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/xiaomi/mido/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/xiaomi/mido/proprietary/lib64/hw/audio.primary.msm8953.so:system/lib64/hw/audio.primary.msm8953.so \
     vendor/xiaomi/mido/proprietary/lib64/hw/consumerir.msm8953.so:system/lib64/hw/consumerir.msm8953.so \
     vendor/xiaomi/mido/proprietary/lib64/hw/fingerprint.goodix.so:system/lib64/hw/fingerprint.goodix.so \
     vendor/xiaomi/mido/proprietary/lib64/hw/fingerprint.searchf.so:system/lib64/hw/fingerprint.searchf.so \
-    vendor/xiaomi/mido/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/xiaomi/mido/proprietary/lib64/hw/gxfingerprint.default.so:system/lib64/hw/gxfingerprint.default.so \
     vendor/xiaomi/mido/proprietary/lib64/libcom_fingerprints_service.so:system/lib64/libcom_fingerprints_service.so \
     vendor/xiaomi/mido/proprietary/lib64/libdisplayfeatureservice.so:system/lib64/libdisplayfeatureservice.so \
     vendor/xiaomi/mido/proprietary/lib64/libfp_client.so:system/lib64/libfp_client.so \
     vendor/xiaomi/mido/proprietary/lib64/libfpnav.so:system/lib64/libfpnav.so \
     vendor/xiaomi/mido/proprietary/lib64/libfpservice.so:system/lib64/libfpservice.so \
-    vendor/xiaomi/mido/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
-    vendor/xiaomi/mido/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/xiaomi/mido/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/xiaomi/mido/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/xiaomi/mido/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
     vendor/xiaomi/mido/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/xiaomi/mido/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
-    vendor/xiaomi/mido/proprietary/lib64/libqti-iop.so:system/lib64/libqti-iop.so \
-    vendor/xiaomi/mido/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
+    vendor/xiaomi/mido/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
+    vendor/xiaomi/mido/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
+    vendor/xiaomi/mido/proprietary/lib/hw/audio.primary.msm8953.so:system/lib/hw/audio.primary.msm8953.so \
     vendor/xiaomi/mido/proprietary/lib/hw/camera.msm8953.so:system/lib/hw/camera.msm8953.so \
     vendor/xiaomi/mido/proprietary/lib/hw/consumerir.msm8953.so:system/lib/hw/consumerir.msm8953.so \
     vendor/xiaomi/mido/proprietary/lib/hw/fingerprint.searchf.so:system/lib/hw/fingerprint.searchf.so \
-    vendor/xiaomi/mido/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/xiaomi/mido/proprietary/lib/libcom_fingerprints_service.so:system/lib/libcom_fingerprints_service.so \
     vendor/xiaomi/mido/proprietary/lib/libdisplayfeatureservice.so:system/lib/libdisplayfeatureservice.so \
-    vendor/xiaomi/mido/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/xiaomi/mido/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/xiaomi/mido/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
     vendor/xiaomi/mido/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/xiaomi/mido/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/xiaomi/mido/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/mido/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/mido/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -212,12 +255,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
     vendor/xiaomi/mido/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/xiaomi/mido/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/xiaomi/mido/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
-    vendor/xiaomi/mido/proprietary/lib/libRecoFace.so:system/lib/libRecoFace.so \
+    vendor/xiaomi/mido/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/mido/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/xiaomi/mido/proprietary/lib/modules/wlan.ko:system/lib/modules/wlan.ko \
     vendor/xiaomi/mido/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
-    vendor/xiaomi/mido/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/xiaomi/mido/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/mido/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/mido/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -225,7 +266,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/xiaomi/mido/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/xiaomi/mido/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config \
-    vendor/xiaomi/mido/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/xiaomi/mido/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
@@ -237,6 +277,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:system/vendor/lib64/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/hw/keystore.msm8953.so:system/vendor/lib64/hw/keystore.msm8953.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
@@ -259,7 +300,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libCommandSvc.so:system/vendor/lib64/libCommandSvc.so \
@@ -276,8 +316,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libevent_observer.so:system/vendor/lib64/libevent_observer.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libfastcvadsp_stub.so:system/vendor/lib64/libfastcvadsp_stub.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libfastcvopt.so:system/vendor/lib64/libfastcvopt.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so \
@@ -288,10 +331,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
@@ -302,37 +348,35 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libizat_client_api.so:system/vendor/lib64/libizat_client_api.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libloc_xtra.so:system/vendor/lib64/libloc_xtra.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-als.so:system/vendor/lib64/libmm-als.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera_cac3_lib.so:system/vendor/lib64/libmmcamera_cac3_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-dspp-utils.so:system/vendor/lib64/libmm-dspp-utils.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-qdcm-diag.so:system/vendor/lib64/libmm-qdcm-diag.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
@@ -340,7 +384,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
@@ -363,9 +406,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
@@ -378,7 +423,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
@@ -388,6 +432,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/xiaomi/mido/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
@@ -424,6 +469,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/hw/sound_trigger.primary.msm8953.so:system/vendor/lib/hw/sound_trigger.primary.msm8953.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -445,7 +491,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_lc898212xd_qc2002.so:system/vendor/lib/libactuator_lc898212xd_qc2002.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_lc898212xd.so:system/vendor/lib/libactuator_lc898212xd.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_lc898217xc.so:system/vendor/lib/libactuator_lc898217xc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_ofilm_dw9763.so:system/vendor/lib/libactuator_ofilm_dw9763.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_pseudo.so:system/vendor/lib/libactuator_pseudo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
@@ -456,7 +504,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libarcsoft_beautyshot_image_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_image_algorithm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libarcsoft_beautyshot_video_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_video_algorithm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libaudiodevarb.so:system/vendor/lib/libaudiodevarb.so \
@@ -515,8 +566,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_liveshot.so:system/vendor/lib/libchromatix_imx230_cpp_liveshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_preview.so:system/vendor/lib/libchromatix_imx230_cpp_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_raw_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_raw_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot_downscale.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot_downscale.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot_hdr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_snapshot_upscale.so:system/vendor/lib/libchromatix_imx230_cpp_snapshot_upscale.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_video_4k.so:system/vendor/lib/libchromatix_imx230_cpp_video_4k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx230_cpp_video_hdr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_cpp_video.so:system/vendor/lib/libchromatix_imx230_cpp_video.so \
@@ -622,8 +675,34 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_video_hdr.so:system/vendor/lib/libchromatix_imx230_video_hdr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_zsl_preview_lc898212xd.so:system/vendor/lib/libchromatix_imx230_zsl_preview_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx230_zsl_video_lc898212xd.so:system/vendor/lib/libchromatix_imx230_zsl_video_lc898212xd.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_4k_preview_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_4k_preview_bu64244gwz.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_4k_video_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_4k_video_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_4k_preview_3a.so:system/vendor/lib/libchromatix_imx258_4k_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_4k_video_3a.so:system/vendor/lib/libchromatix_imx258_4k_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_4k_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_4k_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_4k_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_4k_video_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_common.so:system/vendor/lib/libchromatix_imx258_bear_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx258_bear_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx258_bear_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx258_bear_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_liveshot.so:system/vendor/lib/libchromatix_imx258_bear_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_preview.so:system/vendor/lib/libchromatix_imx258_bear_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_bear_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_bear_cpp_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_cpp_video.so:system/vendor/lib/libchromatix_imx258_bear_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_default_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_default_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_default_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_default_video_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_default_video.so:system/vendor/lib/libchromatix_imx258_bear_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_120_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_hfr_120_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_120.so:system/vendor/lib/libchromatix_imx258_bear_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_60_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_hfr_60_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_60.so:system/vendor/lib/libchromatix_imx258_bear_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_90_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_hfr_90_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_hfr_90.so:system/vendor/lib/libchromatix_imx258_bear_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_postproc.so:system/vendor/lib/libchromatix_imx258_bear_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_preview.so:system/vendor/lib/libchromatix_imx258_bear_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_snapshot.so:system/vendor/lib/libchromatix_imx258_bear_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_video_4k.so:system/vendor/lib/libchromatix_imx258_bear_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_zsl_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_zsl_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_bear_zsl_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_bear_zsl_video_lc898217xc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_common.so:system/vendor/lib/libchromatix_imx258_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx258_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx258_cpp_hfr_60.so \
@@ -633,17 +712,43 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_cpp_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_cpp_video_4k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_cpp_video.so:system/vendor/lib/libchromatix_imx258_cpp_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_default_preview_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_default_preview_bu64244gwz.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_default_video_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_default_preview_3a.so:system/vendor/lib/libchromatix_imx258_default_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_default_video_3a.so:system/vendor/lib/libchromatix_imx258_default_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_default_video.so:system/vendor/lib/libchromatix_imx258_default_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_120_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_120_3a.so:system/vendor/lib/libchromatix_imx258_hfr_120_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_120.so:system/vendor/lib/libchromatix_imx258_hfr_120.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_60_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_60_3a.so:system/vendor/lib/libchromatix_imx258_hfr_60_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_60.so:system/vendor/lib/libchromatix_imx258_hfr_60.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_hfr_90_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_90_3a.so:system/vendor/lib/libchromatix_imx258_hfr_90_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_hfr_90.so:system/vendor/lib/libchromatix_imx258_hfr_90.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_4k_preview_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_4k_preview_ak7371.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_4k_video_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_4k_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_4k_preview_3a.so:system/vendor/lib/libchromatix_imx258_mono_4k_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_4k_video_3a.so:system/vendor/lib/libchromatix_imx258_mono_4k_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_4k_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_4k_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_4k_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_4k_video_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_common.so:system/vendor/lib/libchromatix_imx258_mono_bear_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_liveshot.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_preview.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_cpp_video.so:system/vendor/lib/libchromatix_imx258_mono_bear_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_default_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_default_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_default_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_default_video_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_default_video.so:system/vendor/lib/libchromatix_imx258_mono_bear_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_120_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_120_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_120.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_60_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_60_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_60.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_90_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_90_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_hfr_90.so:system/vendor/lib/libchromatix_imx258_mono_bear_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_postproc.so:system/vendor/lib/libchromatix_imx258_mono_bear_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_preview.so:system/vendor/lib/libchromatix_imx258_mono_bear_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_snapshot.so:system/vendor/lib/libchromatix_imx258_mono_bear_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_video_4k.so:system/vendor/lib/libchromatix_imx258_mono_bear_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_zsl_preview_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_zsl_preview_lc898217xc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_bear_zsl_video_lc898217xc.so:system/vendor/lib/libchromatix_imx258_mono_bear_zsl_video_lc898217xc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_common.so:system/vendor/lib/libchromatix_imx258_mono_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx258_mono_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx258_mono_cpp_hfr_60.so \
@@ -653,21 +758,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_cpp_snapshot.so:system/vendor/lib/libchromatix_imx258_mono_cpp_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_cpp_video_4k.so:system/vendor/lib/libchromatix_imx258_mono_cpp_video_4k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_cpp_video.so:system/vendor/lib/libchromatix_imx258_mono_cpp_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_default_preview_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_default_preview_ak7371.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_default_video_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_default_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_default_preview_3a.so:system/vendor/lib/libchromatix_imx258_mono_default_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_default_video_3a.so:system/vendor/lib/libchromatix_imx258_mono_default_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_default_video.so:system/vendor/lib/libchromatix_imx258_mono_default_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_120_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_hfr_120_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_120_3a.so:system/vendor/lib/libchromatix_imx258_mono_hfr_120_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_120.so:system/vendor/lib/libchromatix_imx258_mono_hfr_120.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_60_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_hfr_60_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_60_3a.so:system/vendor/lib/libchromatix_imx258_mono_hfr_60_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_60.so:system/vendor/lib/libchromatix_imx258_mono_hfr_60.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_90_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_hfr_90_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_90_3a.so:system/vendor/lib/libchromatix_imx258_mono_hfr_90_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_hfr_90.so:system/vendor/lib/libchromatix_imx258_mono_hfr_90.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_postproc.so:system/vendor/lib/libchromatix_imx258_mono_postproc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_preview.so:system/vendor/lib/libchromatix_imx258_mono_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_snapshot.so:system/vendor/lib/libchromatix_imx258_mono_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_video_4k.so:system/vendor/lib/libchromatix_imx258_mono_video_4k.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_zsl_preview_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_zsl_preview_ak7371.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_zsl_video_ak7371.so:system/vendor/lib/libchromatix_imx258_mono_zsl_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_zsl_preview_3a.so:system/vendor/lib/libchromatix_imx258_mono_zsl_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_mono_zsl_video_3a.so:system/vendor/lib/libchromatix_imx258_mono_zsl_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_imx258_ofilm_4k_preview_dw9763.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_imx258_ofilm_4k_video_dw9763.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_ofilm_common.so:system/vendor/lib/libchromatix_imx258_ofilm_common.so \
@@ -753,8 +858,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_sunny_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_imx258_sunny_zsl_preview_dw9763.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_sunny_zsl_video_dw9763.so:system/vendor/lib/libchromatix_imx258_sunny_zsl_video_dw9763.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_video_4k.so:system/vendor/lib/libchromatix_imx258_video_4k.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_zsl_preview_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_zsl_preview_bu64244gwz.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_zsl_video_bu64244gwz.so:system/vendor/lib/libchromatix_imx258_zsl_video_bu64244gwz.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_zsl_preview_3a.so:system/vendor/lib/libchromatix_imx258_zsl_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx258_zsl_video_3a.so:system/vendor/lib/libchromatix_imx258_zsl_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_common.so:system/vendor/lib/libchromatix_imx298_common.so \
@@ -769,6 +874,36 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_cpp_video.so:system/vendor/lib/libchromatix_imx298_cpp_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_default_preview.so:system/vendor/lib/libchromatix_imx298_default_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_default_video.so:system/vendor/lib/libchromatix_imx298_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_4K_preview.so:system/vendor/lib/libchromatix_imx298_gt24c64_4K_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_4K_video.so:system/vendor/lib/libchromatix_imx298_gt24c64_4K_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_common.so:system/vendor/lib/libchromatix_imx298_gt24c64_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_liveshot.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_preview.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_snapshot.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_cpp_video.so:system/vendor/lib/libchromatix_imx298_gt24c64_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_default_preview.so:system/vendor/lib/libchromatix_imx298_gt24c64_default_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_default_video.so:system/vendor/lib/libchromatix_imx298_gt24c64_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx298_gt24c64_hdr_snapshot_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hdr_video_3a.so:system/vendor/lib/libchromatix_imx298_gt24c64_hdr_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_120_3a.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_120_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_120.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_60_3a.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_60_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_60.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_90_3a.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_90_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_hfr_90.so:system/vendor/lib/libchromatix_imx298_gt24c64_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_postproc.so:system/vendor/lib/libchromatix_imx298_gt24c64_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_preview.so:system/vendor/lib/libchromatix_imx298_gt24c64_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_gt24c64_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_snapshot.so:system/vendor/lib/libchromatix_imx298_gt24c64_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_video_hdr.so:system/vendor/lib/libchromatix_imx298_gt24c64_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_video.so:system/vendor/lib/libchromatix_imx298_gt24c64_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_zsl_preview.so:system/vendor/lib/libchromatix_imx298_gt24c64_zsl_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_gt24c64_zsl_video.so:system/vendor/lib/libchromatix_imx298_gt24c64_zsl_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx298_hdr_snapshot_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_hdr_video_3a.so:system/vendor/lib/libchromatix_imx298_hdr_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx298_hfr_120_3a.so:system/vendor/lib/libchromatix_imx298_hfr_120_3a.so \
@@ -791,6 +926,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_4k_video_lc898212xd.so:system/vendor/lib/libchromatix_imx318_4k_video_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_common.so:system/vendor/lib/libchromatix_imx318_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx318_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_hfr_240.so:system/vendor/lib/libchromatix_imx318_cpp_hfr_240.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx318_cpp_hfr_60.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_liveshot.so:system/vendor/lib/libchromatix_imx318_cpp_liveshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_preview.so:system/vendor/lib/libchromatix_imx318_cpp_preview.so \
@@ -799,16 +935,123 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_cpp_video.so:system/vendor/lib/libchromatix_imx318_cpp_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_default_preview_lc898212xd.so:system/vendor/lib/libchromatix_imx318_default_preview_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_default_video_lc898212xd.so:system/vendor/lib/libchromatix_imx318_default_video_lc898212xd.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_default_video.so:system/vendor/lib/libchromatix_imx318_default_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_fullsize_preview_lc898212xd.so:system/vendor/lib/libchromatix_imx318_fullsize_preview_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_fullsize_video_lc898212xd.so:system/vendor/lib/libchromatix_imx318_fullsize_video_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_120_lc898212xd.so:system/vendor/lib/libchromatix_imx318_hfr_120_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_120.so:system/vendor/lib/libchromatix_imx318_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_240_lc898212xd.so:system/vendor/lib/libchromatix_imx318_hfr_240_lc898212xd.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_240.so:system/vendor/lib/libchromatix_imx318_hfr_240.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_60_lc898212xd.so:system/vendor/lib/libchromatix_imx318_hfr_60_lc898212xd.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_hfr_60.so:system/vendor/lib/libchromatix_imx318_hfr_60.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_postproc.so:system/vendor/lib/libchromatix_imx318_postproc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_preview.so:system/vendor/lib/libchromatix_imx318_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_snapshot.so:system/vendor/lib/libchromatix_imx318_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx318_video_4k.so:system/vendor/lib/libchromatix_imx318_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_1080p_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_1080p_preview_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_1080p_preview_3a.so:system/vendor/lib/libchromatix_imx362_1080p_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_1080p_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_1080p_video_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_1080p_video_3a.so:system/vendor/lib/libchromatix_imx362_1080p_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_4k_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_4k_preview_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_4k_preview_3a.so:system/vendor/lib/libchromatix_imx362_4k_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_4k_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_4k_video_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_4k_video_3a.so:system/vendor/lib/libchromatix_imx362_4k_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_common_bear.so:system/vendor/lib/libchromatix_imx362_common_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_common.so:system/vendor/lib/libchromatix_imx362_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_120_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_120_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_240_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_240_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_240.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_240.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_60_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_60_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_liveshot_bear.so:system/vendor/lib/libchromatix_imx362_cpp_liveshot_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_liveshot.so:system/vendor/lib/libchromatix_imx362_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_preview_bear.so:system/vendor/lib/libchromatix_imx362_cpp_preview_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_preview.so:system/vendor/lib/libchromatix_imx362_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_downscale_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_downscale_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_upscale_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_upscale_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video_4k_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_4k_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video_4k.so:system/vendor/lib/libchromatix_imx362_cpp_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video_hdr_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_hdr_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx362_cpp_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_cpp_video.so:system/vendor/lib/libchromatix_imx362_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_default_preview_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_preview_3a.so:system/vendor/lib/libchromatix_imx362_default_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_default_video_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_video_3a.so:system/vendor/lib/libchromatix_imx362_default_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_video_bear.so:system/vendor/lib/libchromatix_imx362_default_video_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_default_video.so:system/vendor/lib/libchromatix_imx362_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_fullsize_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_fullsize_preview_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_fullsize_preview_3a.so:system/vendor/lib/libchromatix_imx362_fullsize_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_fullsize_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_fullsize_video_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_fullsize_video_3a.so:system/vendor/lib/libchromatix_imx362_fullsize_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hdr_snapshot_3a_bear.so:system/vendor/lib/libchromatix_imx362_hdr_snapshot_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx362_hdr_snapshot_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hdr_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_hdr_video_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hdr_video_3a.so:system/vendor/lib/libchromatix_imx362_hdr_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_120_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_120_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_120_3a.so:system/vendor/lib/libchromatix_imx362_hfr_120_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_120_bear.so:system/vendor/lib/libchromatix_imx362_hfr_120_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_120.so:system/vendor/lib/libchromatix_imx362_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_240_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_240_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_240_3a.so:system/vendor/lib/libchromatix_imx362_hfr_240_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_240_bear.so:system/vendor/lib/libchromatix_imx362_hfr_240_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_240.so:system/vendor/lib/libchromatix_imx362_hfr_240.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_60_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_60_3a_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_60_3a.so:system/vendor/lib/libchromatix_imx362_hfr_60_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_60_bear.so:system/vendor/lib/libchromatix_imx362_hfr_60_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_hfr_60.so:system/vendor/lib/libchromatix_imx362_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_postproc_bear.so:system/vendor/lib/libchromatix_imx362_postproc_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_postproc.so:system/vendor/lib/libchromatix_imx362_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_preview_bear.so:system/vendor/lib/libchromatix_imx362_preview_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_preview.so:system/vendor/lib/libchromatix_imx362_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_snapshot_bear.so:system/vendor/lib/libchromatix_imx362_snapshot_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_snapshot_hdr_bear.so:system/vendor/lib/libchromatix_imx362_snapshot_hdr_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_snapshot_hdr.so:system/vendor/lib/libchromatix_imx362_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_snapshot.so:system/vendor/lib/libchromatix_imx362_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_video_4k_bear.so:system/vendor/lib/libchromatix_imx362_video_4k_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_video_4k.so:system/vendor/lib/libchromatix_imx362_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_video_hdr_bear.so:system/vendor/lib/libchromatix_imx362_video_hdr_bear.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx362_video_hdr.so:system/vendor/lib/libchromatix_imx362_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_4K_preview.so:system/vendor/lib/libchromatix_imx378_4K_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_4K_video.so:system/vendor/lib/libchromatix_imx378_4K_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_common.so:system/vendor/lib/libchromatix_imx378_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx378_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_hfr_240.so:system/vendor/lib/libchromatix_imx378_cpp_hfr_240.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx378_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx378_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_liveshot.so:system/vendor/lib/libchromatix_imx378_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_preview.so:system/vendor/lib/libchromatix_imx378_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx378_cpp_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_snapshot.so:system/vendor/lib/libchromatix_imx378_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx378_cpp_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_cpp_video.so:system/vendor/lib/libchromatix_imx378_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_default_preview.so:system/vendor/lib/libchromatix_imx378_default_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_default_video.so:system/vendor/lib/libchromatix_imx378_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx378_hdr_snapshot_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hdr_video_3a.so:system/vendor/lib/libchromatix_imx378_hdr_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_120_3a.so:system/vendor/lib/libchromatix_imx378_hfr_120_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_120.so:system/vendor/lib/libchromatix_imx378_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_240_3a.so:system/vendor/lib/libchromatix_imx378_hfr_240_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_240.so:system/vendor/lib/libchromatix_imx378_hfr_240.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_60_3a.so:system/vendor/lib/libchromatix_imx378_hfr_60_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_60.so:system/vendor/lib/libchromatix_imx378_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_90_3a.so:system/vendor/lib/libchromatix_imx378_hfr_90_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_hfr_90.so:system/vendor/lib/libchromatix_imx378_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_liveshot.so:system/vendor/lib/libchromatix_imx378_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_postproc.so:system/vendor/lib/libchromatix_imx378_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_preview.so:system/vendor/lib/libchromatix_imx378_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_snapshot_hdr.so:system/vendor/lib/libchromatix_imx378_snapshot_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_snapshot.so:system/vendor/lib/libchromatix_imx378_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_video_hdr.so:system/vendor/lib/libchromatix_imx378_video_hdr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_video.so:system/vendor/lib/libchromatix_imx378_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_zsl_preview.so:system/vendor/lib/libchromatix_imx378_zsl_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_imx378_zsl_video.so:system/vendor/lib/libchromatix_imx378_zsl_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13850_common.so:system/vendor/lib/libchromatix_ov13850_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13850_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov13850_cpp_ds_chromatix.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13850_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13850_cpp_hfr_120.so \
@@ -884,6 +1127,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13855_qtech_video.so:system/vendor/lib/libchromatix_ov13855_qtech_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13855_qtech_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13855_qtech_zsl_preview_dw9763.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov13855_qtech_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13855_qtech_zsl_video_dw9763.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_a3_default_preview.so:system/vendor/lib/libchromatix_ov2281_a3_default_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_a3_default_video.so:system/vendor/lib/libchromatix_ov2281_a3_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_common.so:system/vendor/lib/libchromatix_ov2281_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov2281_cpp_ds_chromatix.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_liveshot.so:system/vendor/lib/libchromatix_ov2281_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_preview.so:system/vendor/lib/libchromatix_ov2281_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_snapshot.so:system/vendor/lib/libchromatix_ov2281_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov2281_cpp_us_chromatix.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_cpp_video.so:system/vendor/lib/libchromatix_ov2281_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_default_video.so:system/vendor/lib/libchromatix_ov2281_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_postproc.so:system/vendor/lib/libchromatix_ov2281_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_preview.so:system/vendor/lib/libchromatix_ov2281_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_snapshot.so:system/vendor/lib/libchromatix_ov2281_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_zsl_preview.so:system/vendor/lib/libchromatix_ov2281_zsl_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2281_zsl_video.so:system/vendor/lib/libchromatix_ov2281_zsl_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2680_a3_default_preview.so:system/vendor/lib/libchromatix_ov2680_a3_default_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2680_a3_default_video.so:system/vendor/lib/libchromatix_ov2680_a3_default_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov2680_a3_hfr_60.so:system/vendor/lib/libchromatix_ov2680_a3_hfr_60.so \
@@ -1000,6 +1258,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov5695_video_full.so:system/vendor/lib/libchromatix_ov5695_video_full.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov5695_zsl_preview.so:system/vendor/lib/libchromatix_ov5695_zsl_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov5695_zsl_video.so:system/vendor/lib/libchromatix_ov5695_zsl_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_liveshot.so:system/vendor/lib/libchromatix_ov7251_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_postproc.so:system/vendor/lib/libchromatix_ov7251_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_preview.so:system/vendor/lib/libchromatix_ov7251_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_snapshot.so:system/vendor/lib/libchromatix_ov7251_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_zsl_preview.so:system/vendor/lib/libchromatix_ov7251_zsl_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov7251_zsl_video.so:system/vendor/lib/libchromatix_ov7251_zsl_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_a3_default_preview.so:system/vendor/lib/libchromatix_ov8856_a3_default_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_a3_default_video.so:system/vendor/lib/libchromatix_ov8856_a3_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_a3_hfr_120.so:system/vendor/lib/libchromatix_ov8856_a3_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_a3_hfr_60.so:system/vendor/lib/libchromatix_ov8856_a3_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_a3_hfr_90.so:system/vendor/lib/libchromatix_ov8856_a3_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_common.so:system/vendor/lib/libchromatix_ov8856_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_ov8856_cpp_ds_chromatix.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov8856_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov8856_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov8856_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_liveshot.so:system/vendor/lib/libchromatix_ov8856_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_preview.so:system/vendor/lib/libchromatix_ov8856_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_snapshot.so:system/vendor/lib/libchromatix_ov8856_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_us_chromatix.so:system/vendor/lib/libchromatix_ov8856_cpp_us_chromatix.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_cpp_video.so:system/vendor/lib/libchromatix_ov8856_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_default_video.so:system/vendor/lib/libchromatix_ov8856_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_hfr_120.so:system/vendor/lib/libchromatix_ov8856_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_hfr_60.so:system/vendor/lib/libchromatix_ov8856_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_hfr_90.so:system/vendor/lib/libchromatix_ov8856_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_liveshot.so:system/vendor/lib/libchromatix_ov8856_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_postproc.so:system/vendor/lib/libchromatix_ov8856_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_preview.so:system/vendor/lib/libchromatix_ov8856_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_snapshot.so:system/vendor/lib/libchromatix_ov8856_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_zsl_preview.so:system/vendor/lib/libchromatix_ov8856_zsl_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8856_zsl_video.so:system/vendor/lib/libchromatix_ov8856_zsl_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8858_a3_default_preview.so:system/vendor/lib/libchromatix_ov8858_a3_default_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8858_a3_default_video.so:system/vendor/lib/libchromatix_ov8858_a3_default_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8858_a3_hfr_120.so:system/vendor/lib/libchromatix_ov8858_a3_hfr_120.so \
@@ -1050,6 +1339,56 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8865_video_full.so:system/vendor/lib/libchromatix_ov8865_video_full.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8865_zsl_preview.so:system/vendor/lib/libchromatix_ov8865_zsl_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_ov8865_zsl_video.so:system/vendor/lib/libchromatix_ov8865_zsl_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_4k_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_4k_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_4k_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_4k_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_4k_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_4k_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_4k_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_4k_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_common.so:system/vendor/lib/libchromatix_s5k2l7_8953_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_preview.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_cpp_video.so:system/vendor/lib/libchromatix_s5k2l7_8953_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_default_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_default_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_default_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_default_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_120_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_120_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_120.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_60_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_60_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_60.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_90_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_90_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_hfr_90.so:system/vendor/lib/libchromatix_s5k2l7_8953_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_postproc.so:system/vendor/lib/libchromatix_s5k2l7_8953_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_preview.so:system/vendor/lib/libchromatix_s5k2l7_8953_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_snapshot.so:system/vendor/lib/libchromatix_s5k2l7_8953_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_video_4k.so:system/vendor/lib/libchromatix_s5k2l7_8953_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_zsl_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_zsl_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_8953_zsl_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_zsl_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_common.so:system/vendor/lib/libchromatix_s5k2l7_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k2l7_cpp_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k2l7_cpp_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k2l7_cpp_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k2l7_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_preview.so:system/vendor/lib/libchromatix_s5k2l7_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k2l7_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k2l7_cpp_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_cpp_video.so:system/vendor/lib/libchromatix_s5k2l7_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_default_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_default_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_default_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_default_video_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_120_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_hfr_120_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_120.so:system/vendor/lib/libchromatix_s5k2l7_hfr_120.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_60_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_hfr_60_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_60.so:system/vendor/lib/libchromatix_s5k2l7_hfr_60.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_90_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_hfr_90_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_hfr_90.so:system/vendor/lib/libchromatix_s5k2l7_hfr_90.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_postproc.so:system/vendor/lib/libchromatix_s5k2l7_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_preview.so:system/vendor/lib/libchromatix_s5k2l7_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_snapshot.so:system/vendor/lib/libchromatix_s5k2l7_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_video_4k.so:system/vendor/lib/libchromatix_s5k2l7_video_4k.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_zsl_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_zsl_preview_ak7371.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k2l7_zsl_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_zsl_video_ak7371.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3l8_common.so:system/vendor/lib/libchromatix_s5k3l8_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3l8_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k3l8_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3l8_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k3l8_cpp_hfr_60.so \
@@ -1237,7 +1576,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_hfr_90.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_liveshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_preview.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot_downscale.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot_downscale.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot_upscale.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_snapshot_upscale.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_video_4k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_cpp_video.so:system/vendor/lib/libchromatix_s5k3m2xx_cpp_video.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_default_preview_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_default_preview_ad5816g.so \
@@ -1255,24 +1596,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_video_4k.so:system/vendor/lib/libchromatix_s5k3m2xx_video_4k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_zsl_preview_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_zsl_preview_ad5816g.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3m2xx_zsl_video_ad5816g.so:system/vendor/lib/libchromatix_s5k3m2xx_zsl_video_ad5816g.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_common.so:system/vendor/lib/libchromatix_s5k5e8_common.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_cpp_hfr_120.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_cpp_hfr_60.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_cpp_hfr_90.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_cpp_liveshot.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_cpp_preview.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_cpp_snapshot.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_cpp_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_default_preview_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_default_video_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_default_video.so:system/vendor/lib/libchromatix_s5k5e8_default_video.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_hfr_120_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_hfr_120.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_hfr_60_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_hfr_60.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_hfr_90_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_hfr_90.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_common.so:system/vendor/lib/libchromatix_s5k3p3sm_common.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3p3sm_cpp_liveshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_cpp_preview.so:system/vendor/lib/libchromatix_s5k3p3sm_cpp_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3p3sm_cpp_snapshot.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_cpp_video.so:system/vendor/lib/libchromatix_s5k3p3sm_cpp_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_default_preview_3a.so:system/vendor/lib/libchromatix_s5k3p3sm_default_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_default_video_3a.so:system/vendor/lib/libchromatix_s5k3p3sm_default_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_default_video.so:system/vendor/lib/libchromatix_s5k3p3sm_default_video.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_fullsize_preview_3a.so:system/vendor/lib/libchromatix_s5k3p3sm_fullsize_preview_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_fullsize_video_3a.so:system/vendor/lib/libchromatix_s5k3p3sm_fullsize_video_3a.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_postproc.so:system/vendor/lib/libchromatix_s5k3p3sm_postproc.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_preview.so:system/vendor/lib/libchromatix_s5k3p3sm_preview.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k3p3sm_snapshot.so:system/vendor/lib/libchromatix_s5k3p3sm_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_common.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so \
@@ -1296,8 +1632,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_postproc.so:system/vendor/lib/libchromatix_s5k5e8_postproc.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_preview.so:system/vendor/lib/libchromatix_s5k5e8_preview.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_common.so:system/vendor/lib/libchromatix_s5k5e8_qtech_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so \
@@ -1321,7 +1655,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_zsl_preview_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_zsl_video_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_common.so:system/vendor/lib/libchromatix_s5k5e8_sunny_common.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_120.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_60.so \
@@ -1345,10 +1678,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_zsl_preview_3a.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libchromatix_s5k5e8_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_zsl_video_3a.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
@@ -1381,10 +1711,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libllvd_sw_tnr.so:system/vendor/lib/libllvd_sw_tnr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
@@ -1401,6 +1730,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:system/vendor/lib/libmmcamera2_mct_shimlayer.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_mct.so:system/vendor/lib/libmmcamera2_mct.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:system/vendor/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
@@ -1416,24 +1746,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:system/vendor/lib/libmmcamera_dcrf_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_dw9761b_2d_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_2d_eeprom.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:system/vendor/lib/libmmcamera_facedetection_lib.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_faceproc2.so:system/vendor/lib/libmmcamera_faceproc2.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx230.so:system/vendor/lib/libmmcamera_imx230.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_gt24c32_eeprom.so:system/vendor/lib/libmmcamera_imx258_gt24c32_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so:system/vendor/lib/libmmcamera_imx258_mono_gt24c32_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_mono.so:system/vendor/lib/libmmcamera_imx258_mono.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_ofilm.so:system/vendor/lib/libmmcamera_imx258_ofilm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_qtech.so:system/vendor/lib/libmmcamera_imx258_qtech.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258.so:system/vendor/lib/libmmcamera_imx258.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_sunny_eeprom.so:system/vendor/lib/libmmcamera_imx258_sunny_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx258_sunny.so:system/vendor/lib/libmmcamera_imx258_sunny.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx298.so:system/vendor/lib/libmmcamera_imx298.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx318.so:system/vendor/lib/libmmcamera_imx318.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx362.so:system/vendor/lib/libmmcamera_imx362.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_imx378.so:system/vendor/lib/libmmcamera_imx378.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_isp_abf40.so:system/vendor/lib/libmmcamera_isp_abf40.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:system/vendor/lib/libmmcamera_isp_bcc40.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_isp_be_stats44.so:system/vendor/lib/libmmcamera_isp_be_stats44.so \
@@ -1476,10 +1810,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so:system/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:system/vendor/lib/libmmcamera_ov13850_q13v06k.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov13855_qtech.so:system/vendor/lib/libmmcamera_ov13855_qtech.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov2281.so:system/vendor/lib/libmmcamera_ov2281.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov2685_scv3b4035.so:system/vendor/lib/libmmcamera_ov2685_scv3b4035.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov2685.so:system/vendor/lib/libmmcamera_ov2685.so \
@@ -1488,16 +1824,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov5695.so:system/vendor/lib/libmmcamera_ov5695.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov7251.so:system/vendor/lib/libmmcamera_ov7251.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov8856.so:system/vendor/lib/libmmcamera_ov8856.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ov8865.so:system/vendor/lib/libmmcamera_ov8865.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so:system/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so:system/vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_imx258_eeprom.so:system/vendor/lib/libmmcamera_qtech_imx258_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_ov13855_eeprom.so:system/vendor/lib/libmmcamera_qtech_ov13855_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_s5k3l8_eeprom.so:system/vendor/lib/libmmcamera_qtech_s5k3l8_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_qtech_s5k5e8_eeprom.so:system/vendor/lib/libmmcamera_qtech_s5k5e8_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so:system/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k2l7.so:system/vendor/lib/libmmcamera_s5k2l7.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3l8_mono.so:system/vendor/lib/libmmcamera_s5k3l8_mono.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3l8_ofilm.so:system/vendor/lib/libmmcamera_s5k3l8_ofilm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3l8_qtech.so:system/vendor/lib/libmmcamera_s5k3l8_qtech.so \
@@ -1505,26 +1849,31 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3l8_sunny.so:system/vendor/lib/libmmcamera_s5k3l8_sunny.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:system/vendor/lib/libmmcamera_s5k3m2xm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3m2xx.so:system/vendor/lib/libmmcamera_s5k3m2xx.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k3p3sm.so:system/vendor/lib/libmmcamera_s5k3p3sm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k5e8_ofilm.so:system/vendor/lib/libmmcamera_s5k5e8_ofilm.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k5e8_qtech.so:system/vendor/lib/libmmcamera_s5k5e8_qtech.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k5e8.so:system/vendor/lib/libmmcamera_s5k5e8.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_s5k5e8_sunny.so:system/vendor/lib/libmmcamera_s5k5e8_sunny.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sony_imx214_eeprom.so:system/vendor/lib/libmmcamera_sony_imx214_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sony_imx298_eeprom.so:system/vendor/lib/libmmcamera_sony_imx298_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sony_imx378_eeprom.so:system/vendor/lib/libmmcamera_sony_imx378_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_imx258_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx258_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_s5k3l8_eeprom.so:system/vendor/lib/libmmcamera_sunny_s5k3l8_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sunny_s5k5e8_eeprom.so:system/vendor/lib/libmmcamera_sunny_s5k5e8_eeprom.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sw_tnr.so:system/vendor/lib/libmmcamera_sw_tnr.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_truly_cma481_eeprom.so:system/vendor/lib/libmmcamera_truly_cma481_eeprom.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_truly_cmb433_eeprom.so:system/vendor/lib/libmmcamera_truly_cmb433_eeprom.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
@@ -1544,7 +1893,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmorpho_hdr_checker.so:system/vendor/lib/libmorpho_hdr_checker.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmorpho_image_stab4.so:system/vendor/lib/libmorpho_image_stab4.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libmorpho_panorama_gp.so:system/vendor/lib/libmorpho_panorama_gp.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
@@ -1561,7 +1911,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -1582,11 +1931,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libRecoFace.so:system/vendor/lib/libRecoFace.so \
+    vendor/xiaomi/mido/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -1597,7 +1947,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/xiaomi/mido/proprietary/vendor/lib/libtm_interface.so:system/vendor/lib/libtm_interface.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/xiaomi/mido/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
@@ -1634,20 +1983,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mido/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    libsdm-disp-apis \
     libtime_genoff \
     datastatusnotification \
     embms \
     fastdormancy \
+    QtiTelephonyService \
     shutdownlistener \
     TimeService \
     CNEService \
     com.qualcomm.location \
-    ims \
     qcrilmsgtunnel \
     QtiTetherService \
+    ims \
     imssettings \
     com.qti.location.sdk \
     qcrilhook \
     qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel \
-    qdcm_calib_data_nt35596_fhd_video_mode_dsi_panel \
     qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel

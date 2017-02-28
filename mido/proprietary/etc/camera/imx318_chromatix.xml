@@ -139,5 +139,16 @@ special_mode_mask values:
       <A3Preview>imx318_hfr_120_lc898212xd</A3Preview>
       <A3Video>imx318_hfr_120_lc898212xd</A3Video>
     </ChromatixName>
+    <ChromatixName sensor_resolution_index="5" special_mode_mask="0">
+      <ISPPreview>imx318_hfr_240</ISPPreview>
+      <ISPSnapshot>imx318_hfr_240</ISPSnapshot>
+      <ISPVideo>imx318_hfr_240</ISPVideo>
+      <CPPPreview>imx318_cpp_hfr_240</CPPPreview>
+      <CPPSnapshot>imx318_cpp_hfr_240</CPPSnapshot>
+      <CPPVideo>imx318_cpp_hfr_240</CPPVideo>
+      <CPPLiveshot>imx318_cpp_hfr_240</CPPLiveshot>
+      <A3Preview>imx318_hfr_240_lc898212xd</A3Preview>
+      <A3Video>imx318_hfr_240_lc898212xd</A3Video>
+    </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
